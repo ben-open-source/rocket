@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url('assets/backgrounds/pexels-xuan-hoa-le-61381.jpg');
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: 200px;
+  background: rgb(53, 102, 53);
+}
