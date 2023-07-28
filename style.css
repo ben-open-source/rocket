@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: antiquewhite;
+}
+
 .header {
   background-image: url('assets/backgrounds/pexels-xuan-hoa-le-61381.jpg');
   height: 300px;
@@ -12,10 +16,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow:
+  0.8px 2.7px 2.2px rgba(0, 0, 0, 0.02),
+  1.9px 6.5px 5.3px rgba(0, 0, 0, 0.028),
+  3.6px 12.3px 10px rgba(0, 0, 0, 0.035),
+  6.5px 21.9px 17.9px rgba(0, 0, 0, 0.042),
+  12.1px 40.9px 33.4px rgba(0, 0, 0, 0.05),
+  29px 98px 80px rgba(0, 0, 0, 0.07);
 }
 
 .logo {
   height: 100px;
   width: 200px;
-  background: rgb(53, 102, 53);
+  border: 1px solid black;
+  position: absolute;
+}
+
+.blob {
+  position: fixed;
+  bottom: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background-color: brown;
+  padding: 10px;
 }
