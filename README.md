@@ -4,7 +4,7 @@
   <img src="#" alt="rocket-logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>ROCKET RACCOON</b></h3>
+  <h3><b>ROCKET RACCOON ERC20</b></h3>
 
 </div>
 
@@ -30,9 +30,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Rocket Raccoon <a name="about-project"></a>
+# 📖 Rocket Raccoon Erc20 <a name="about-project"></a>
 
-**Rocket Racoon** is our genetically-engineered soldier $ROCKET. He is an intelligent, anthropomorphic raccoon, who is the expert marksman, weapon specialist and master tactician. He has been created by the Kree and is ready to annihilate all the others that came before him.
+**Rocket Raccoon Erc20** is our genetically-engineered soldier $ROCK3T. He is an intelligent, anthropomorphic raccoon, who is the expert marksman, weapon specialist and master tactician. He has been created by the Kree and is ready to annihilate all the others that came before him.
 
 ## 🛠 Built With <a name="built-with"></a>
 
