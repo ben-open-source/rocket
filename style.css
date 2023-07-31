@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -9,13 +11,16 @@ body {
 }
 
 .header {
-  background-image: url('assets/backgrounds/pexels-xuan-hoa-le-61381.jpg');
-  height: 300px;
+  min-height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  gap: 30px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Handjet', cursive;
+  padding-block: 30px;
   box-shadow:
   0.8px 2.7px 2.2px rgba(0, 0, 0, 0.02),
   1.9px 6.5px 5.3px rgba(0, 0, 0, 0.028),
@@ -28,8 +33,12 @@ body {
 .logo {
   height: 100px;
   width: 200px;
-  border: 1px solid black;
-  position: absolute;
+}
+
+.contract {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .blob {
@@ -47,4 +56,93 @@ footer {
   text-align: center;
   background-color: brown;
   padding: 10px;
+}
+
+/* header buttons */
+
+.buttons {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cssbuttons-io-button {
+  background: #441191;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.7em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* end of header buttons */
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    height: 200px;
+    width: auto;
+  }
+
+  .header {
+    padding-block: 100px;
+  }
+
+  .cssbuttons-io-button {
+    height: 2.8em;
+  }
+
+  .cssbuttons-io-button .icon {
+    height: 2.2em;
+  }
+
+  .contract {
+    letter-spacing: 4px;
+    font-size: 2rem;
+  }
 }
