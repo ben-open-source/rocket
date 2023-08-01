@@ -40,6 +40,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.5px;
+  display: none;
 }
 
 .contract span {
@@ -73,7 +74,7 @@ footer {
 }
 
 .cssbuttons-io-button {
-  background: #441191;
+  background: #08c;
   color: white;
   font-family: inherit;
   padding: 0.35em;
@@ -102,7 +103,7 @@ footer {
   height: 1.7em;
   width: 2.2em;
   border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #08c;
   right: 0.3em;
   transition: all 0.3s;
 }
@@ -147,7 +148,7 @@ footer {
 
 #video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+  padding-bottom: 56.25%; /*16:9 aspect ratio (9 / 16 = 0.5625)*/
   height: 0;
   overflow: hidden;
   margin-inline: 15px;
@@ -268,6 +269,68 @@ footer {
 
 /* end of tokenomics */
 
+
+/* telegram */
+button {
+  position: relative;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #08c solid;
+  overflow: hidden;
+}
+
+.text1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 22%;
+}
+
+.text2 {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.t-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.t-icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background-color: #08c;
+}
+
+button:hover .t-icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+button:hover .text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+button:active {
+  transform: scale(1.03);
+}
+
+/* end of telegram */
+
 @media only screen and (min-width: 768px) {
   .logo {
     height: 200px;
@@ -287,6 +350,7 @@ footer {
   }
 
   .contract {
+    display: block;
     letter-spacing: 4px;
     font-size: 2rem;
   }
@@ -298,5 +362,10 @@ footer {
   .heading-about {
     font-size: 48px;
     letter-spacing: 1px;
+  }
+
+  #video {
+    margin-inline: 600px;
+    padding-bottom: 30%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
   }
 }
