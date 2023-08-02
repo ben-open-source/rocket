@@ -135,6 +135,8 @@ footer {
   padding: 20px;
   padding-top: 50px;
   letter-spacing: 1px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .heading-about {
@@ -144,6 +146,12 @@ footer {
 
 #about article {
   margin-bottom: 20px;
+}
+
+.properties {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 #video {
@@ -331,6 +339,26 @@ button:active {
 
 /* end of telegram */
 
+/* twitter */
+.twitter {
+  width: 35px;
+  height: 33px;
+  border-radius: 15px;
+  background-color: #000;
+  transition: all ease-in-out 0.2s;
+}
+
+.twitter-container:hover .twitter {
+  background-color: #08c;
+}
+
+@media only screen and (max-width: 400px) {
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .logo {
     height: 200px;
@@ -365,7 +393,9 @@ button:active {
   }
 
   #video {
-    margin-inline: 600px;
-    padding-bottom: 30%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+    margin-inline: 100px;
+    padding-bottom: 40%;
   }
+
+
 }
