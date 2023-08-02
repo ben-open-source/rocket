@@ -352,7 +352,7 @@ button:active {
   background-color: #08c;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 330px) {
   .cards-container {
     display: flex;
     flex-direction: column;
@@ -396,6 +396,4 @@ button:active {
     margin-inline: 100px;
     padding-bottom: 40%;
   }
-
-
 }
