@@ -139,9 +139,10 @@ footer {
   margin: 0 auto;
 }
 
-.heading-about {
+.heading-about,
+.heading-tokenomics {
   font-size: 1.6rem;
-  font-family: 'Merriweather', serif;;
+  font-family: 'Merriweather', serif;
 }
 
 #about article {
@@ -395,7 +396,8 @@ button:active {
     font-size: 1.6rem;
   }
 
-  .heading-about {
+  .heading-about,
+  .heading-tokenomics {
     font-size: 48px;
     letter-spacing: 1px;
   }
