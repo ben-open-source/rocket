@@ -12,6 +12,14 @@ body {
   padding-bottom: 100px;
 }
 
+.main-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 3px 3px 3px green;
+  color: yellow;
+  text-align: center;
+}
+
 main {
   background-image: 
     url("/assets/backgrounds/IMG_20230802_193253_068-removebg-preview.png");
@@ -37,11 +45,6 @@ main {
   6.5px 21.9px 17.9px rgba(0, 0, 0, 0.042),
   12.1px 40.9px 33.4px rgba(0, 0, 0, 0.05),
   29px 98px 80px rgba(0, 0, 0, 0.07);
-}
-
-.logo {
-  height: 100px;
-  width: 200px;
 }
 
 .contract {
@@ -390,9 +393,8 @@ button:active {
     background-size: auto;
   }
 
-  .logo {
-    height: 200px;
-    width: auto;
+  .main-heading {
+    font-size: 4rem;
   }
 
   .header {
