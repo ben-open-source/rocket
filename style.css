@@ -7,8 +7,18 @@
 }
 
 body {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-color: black;
+  color: #f2f8f9;
+  /* color: #DDDDDD; */
+  /* color: #FFD700; */
   padding-bottom: 100px;
+}
+
+main {
+  background-image: 
+    url("/assets/backgrounds/IMG_20230802_193253_068-removebg-preview.png");
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -292,6 +302,11 @@ button {
   overflow: hidden;
 }
 
+button a {
+  text-decoration: none;
+  color: black;
+}
+
 .text1 {
   font-size: 15px;
   font-weight: 600;
@@ -369,6 +384,12 @@ button:active {
 }
 
 @media only screen and (min-width: 768px) {
+  main {
+    background-position-x: 100%;
+    background-position-y: 40%;
+    background-origin: padding-box;
+  }
+
   .logo {
     height: 200px;
     width: auto;
@@ -376,6 +397,9 @@ button:active {
 
   .header {
     padding-block: 100px;
+    background-image: url("/assets/backgrounds/IMG_20230802_193253_333-removebg-preview.png");
+    background-size: contain;
+    background-origin: padding-box;
   }
 
   .cssbuttons-io-button {
@@ -390,10 +414,18 @@ button:active {
     display: block;
     letter-spacing: 4px;
     font-size: 2rem;
+    color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   #about {
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: -10%;
+
   }
 
   .heading-about,
@@ -405,5 +437,23 @@ button:active {
   #video {
     margin-inline: 100px;
     padding-bottom: 40%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    background-image: 
+      url("/assets/backgrounds/IMG_20230802_193253_048-removebg-preview\ \(1\).png"),
+      url("/assets/backgrounds/IMG_20230802_193253_262-removebg-preview\ \(1\).png"),
+      url("/assets/backgrounds/IMG_20230802_193253_068-removebg-preview.png");
+    background-position-y: 60%, 90%, 40%;
+    background-position-x: -10%, 100%, 70%;
+    background-blend-mode: color-dodge;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  main {
+    background-position-x: 5%, 100%, 70%;
   }
 }
