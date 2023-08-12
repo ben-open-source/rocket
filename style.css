@@ -16,8 +16,8 @@ body {
 .main-heading {
   font-weight: 700;
   font-size: 2rem;
-  text-shadow: 3px 3px 3px green;
-  color: yellow;
+  text-shadow: 3px 3px 3px rgb(105, 1, 1);
+  color: rgb(183, 227, 25);
   text-align: center;
 }
 
@@ -189,6 +189,7 @@ footer {
   text-align: center;
   display: grid;
   place-items: center;
+  margin-bottom: 20px;
 }
 
 .cards-container {
